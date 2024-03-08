@@ -1,0 +1,503 @@
+/* Overall */
+
+:root{
+  --darkblue:#316879;
+  --orange:#f47a60;
+  --brightblue:#7fe7dc;
+  --dbrightblue:#0ee9d3;
+  --grey:#ced7d8;
+  --white:#ffffff;
+  --darkgrey: #333;
+}
+.whole-page{
+  background: url(../Images/Backdrop.jpg) no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+.action-bar{
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+.menu-bar nav{
+  background: var(--darkblue);
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color:var(--brightblue);
+  font-size: 35px;
+  line-height:80px;
+  padding: 0 100px;
+  font-weight:bold;
+  font-family: 'Emblema One', system-ui;
+  letter-spacing: -8.5px;
+}
+nav ul{
+  float: right;
+  margin-right: 100px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin:0 5px;
+}
+nav ul li a{
+  color:var(--brightblue);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+nav ul li a.active,a:hover{
+  background: var(--brightblue);
+  color: var(--darkblue);
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  float:right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+/* action bar css ends */
+
+.btn-close{
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 50px;
+  top: 100px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+.btn-close:hover{
+  opacity: 0.7;
+  background-color: var(--grey);
+
+}
+
+/* cross button css close */
+
+.header{
+  background-color: var(--darkblue);
+  color: var(--white);
+  width: 90%;
+  border-radius: 10px;
+  margin: 50px;
+  padding: 30px;
+}
+.header h1{
+  font-size: 30px;
+  font-weight: bolder;
+}
+.header h3{
+  font-size: 20px;
+}
+.product{
+  font-size: 30px;
+  background-color: transparent;
+  color: var(--darkblue);
+  width: 90%;
+  border: 2px solid var(--darkblue);
+  border-radius: 10px;
+  margin: 50px;
+  padding: 30px;
+}
+.productimg{
+  height: 50px;
+  margin: 5px;
+  margin-right: 10px;
+  background-color: var(--darkblue);
+  border-radius: 50px;
+}
+.product h3{
+  font-size: 20px;
+}
+
+/* Header and product css close */
+
+.container{
+  width: 90%;
+  margin: 50px;
+  padding-left: 30px;
+  padding-right: 0;
+}
+.container .pb-2{
+  color: var(--darkblue);
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 2px solid var(--darkblue);
+}
+.container .bi{
+  height: 50px;
+  width: 50px;
+  background-color: var(--darkblue);
+  border-radius: 50px;
+  color: var(--white);
+}
+.container .bi h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+.container .feature{
+  border: 2px solid var(--darkblue);
+  margin: 30px;
+  margin-bottom: 0;
+  width: 550px;
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--darkblue);
+}
+.topic{
+  color: var(--darkblue);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* overview css close */
+
+.research{
+  color: var(--darkblue);
+  border-bottom: 2px solid var(--darkblue);
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.r1{
+  color: var(--darkblue);
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 50px;
+}
+.row1 .feature{
+  border: 2px solid var(--darkblue);
+  margin: 15px;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--darkblue);
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.row1 p{
+  color: var(--darkblue);
+}
+.row1 ol p{
+  font-size: 20px;
+}
+.row1 ol li{
+  color: var(--darkblue);
+}
+.topic1{
+  font-size: 20px;
+}
+.pain{
+  font-size: 25px;
+  color: var(--darkblue);
+}
+.a{
+  display: flex;
+}
+.persona{
+  width: 90%;
+  display: block;
+  align-items:flex-start;
+  justify-content: center;
+  margin-top: 30px;
+}
+.container-1, .container-2{
+  max-width: 1240px;
+  width: 100%;
+  height: 900px;
+  border-radius: 12px;
+  margin: 30px 20px;
+  padding: 40px 50px 40px 40px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.container-1 .main-title, .container-2 .main-title1{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: var(--darkblue);
+  text-decoration: underline;
+}
+.container-1 .content1, .container-2 .content2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content1 .list label, .content2 .list1 label{
+  height: 60px;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 22px;
+  line-height: 60px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  color: var(--darkgrey);
+  cursor: pointer;
+  z-index: 12;
+  transition: all 0.4s ease;
+}
+.list1 label:hover, .list label:hover{
+  background: var(--darkblue);
+  color: var(--brightblue);
+}
+.container-1 .content1 .list, .container-2 .content2 .list1{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 25%;
+  margin-right: 50px;
+}
+#about:checked ~ .list .about, #problem:checked ~ .list .problem, #journey:checked ~ .list .journey,
+#about1:checked ~ .list1 .about1, #problem1:checked ~ .list1 .problem1, #journey1:checked ~ .list1 .journey1{
+  color: var(--brightblue);
+}
+.content1 .indicator, .content2 .indicator1{
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  top: 0;
+  left: -300;
+  background: var(--darkblue);
+  border-radius: 22px;
+  transition: all 0.4s ease;
+}
+#about:checked ~ .list .indicator, #about1:checked ~ .list1 .indicator1{
+  top: 0;
+}
+#problem:checked ~ .list .indicator, #problem1:checked ~ .list1 .indicator1{
+  top: 60px;
+}
+#journey:checked ~ .list .indicator, #journey1:checked ~ .list1 .indicator1{
+  top: 120px;
+}
+.container-1 input[type="radio"], .container-2 input[type="radio"]{
+  display: none;
+}
+.container-1 .content1 .text-content, .container-2 .content2 .text-content1{
+  padding-top: 30px;
+  width: 80%;
+  height: 300px;
+}
+.content1 .text-content .text, .content2 .text-content1 .text{
+  display: none;
+}
+.content1 .text-content .about, .content2 .text-content1 .about1{
+  display: grid;
+}
+#about:checked ~ .text-content .about, #about1:checked ~ .text-content1 .about1{
+  display: grid;
+}
+#problem:checked ~ .text-content .problem, #journey:checked ~ .text-content .journey,
+#problem1:checked ~ .text-content1 .problem1, #journey1:checked ~ .text-content1 .journey1{
+  display: block;
+}
+#problem:checked ~ .text-content .about, #journey:checked ~ .text-content .about,
+#problem1:checked ~ .text-content1 .about1, #journey1:checked ~ .text-content1 .about1{
+  display: none;
+}
+.content1 .text-content img, .content2 .text-content1 img{
+  text-align: justify;
+}
+.content1 .text-content .title, .content2 .text-content1 .title{
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.text-content, .text-content1{
+  color: var(--darkblue);
+}
+.text-content .about, .text-content1 .about1{
+  height: 500px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.text-content .title, .text-content1 .title{
+  grid-area: 1 / 1 / 2 / 2;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.text-content img, .text-content1 img{
+  border-radius: 20px;
+  grid-area: 2 / 1 / 4 / 2;
+}
+.text-content .about p, .text-content1 .about1 p{
+  grid-area: 1 / 2 / 3 / 4;
+  text-align: center;
+}
+.persona1-info{
+  grid-area: 4 / 1 / 5 / 2;
+}
+.goals{
+  grid-area: 2 / 2 / 5 / 3;
+  font-size: 20px;
+}
+.goals ul{
+  font-size: 14px;
+}
+.frustation{
+  grid-area: 2 / 3 / 5 / 4;
+  font-size: 20px;
+}
+.frustation ul{
+  font-size: 14px;
+}
+.persona-info{
+  grid-area: 5 / 1 / 6 / 4;
+}
+.journey p{
+  font-size: 16px;
+}
+th{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+table, th, td {
+  border: 2px solid var(--darkblue);
+}
+td{
+  font-size: 12px;
+  align-items: flex-start;
+}
+.problem p, .problem1 p{
+  font-size: 30px;
+  margin: 100px;
+}
+.design, .redesign{
+  max-width: 1240px;
+  width: 100%;
+  margin: 130px auto;
+  margin-bottom: 80px;
+  padding: 25px 30px 30px 30px;
+  border-radius: 12px;
+  background: var(--white);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.design header, .redesign header{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.design nav, .redesign nav{
+  position: relative;
+  height: 50px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.design nav label, .redesign nav label{
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  color: var(--darkgrey);
+  border: 2px solid var(--brightblue);
+  border-radius: 20px;
+  font-size: 17px;
+  margin-right: 20px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+#paper:checked ~ nav label.paper,
+#digital:checked ~ nav label.digital,
+#lo-fi:checked ~ nav label.lo-fi,
+#mockups:checked ~ nav label.mockups,
+#key:checked ~ nav label.key,
+#hi-fi:checked ~ nav label.hi-fi{
+  color: var(--darkblue);
+}
+input[type="radio"]{
+  display: none;
+}
+.design nav .slider, .redesign nav .slider{
+  position: absolute;
+  height: 100%;
+  width: 294px;
+  margin-right: 20px;
+  background: var(--brightblue);
+  border-radius: 20px;
+  z-index: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+#digital:checked ~ nav .slider, #key:checked ~ nav .slider{
+  left: 315px;
+}
+#lo-fi:checked ~ nav .slider, #hi-fi:checked ~ nav .slider{
+  left: 630px;
+}
+section .content-2, section .content-3{
+  display: none;
+}
+#paper:checked ~ section .design1,
+#digital:checked ~ section .design2,
+#lo-fi:checked ~ section .design3,
+#mockups:checked ~ section .redesign1,
+#key:checked ~ section .redesign2,
+#hi-fi:checked ~ section .redesign3{
+  display: block;
+}
+section .content-2 .title, section .content-3 .title{
+  font-size: 21px;
+  font-weight: bold;
+  margin: 30px 0 10px 0;
+}
+section .content-2 .title p, section .content-3 .title p{
+  font-size: 18px;
+  font-weight: normal;
+  margin: 20px 0 10px 0;
+}
+section .content-2 .images p, section .content-3 .images p{
+  font-size: 12px;
+}
+
+
+
+.dis-flex{
+  background-color:var(--orange);
+  display:flex;
+  align-items: center;
+  font-weight: bold;
+}
+.dis-flex p{
+  color: var(--white);
+}
+.container-box{
+  background-color: var(--darkblue);
+  margin-top: 50px;
+  padding: 30px;
+}
+
+/* footer css end */
+
+
+
+
+
+
+
+
