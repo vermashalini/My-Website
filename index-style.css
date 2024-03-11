@@ -166,6 +166,10 @@ nav ul li a.active,a:hover{
   color:var(--darkblue);
   font-weight: bold;
 }
+.py-5 {
+  padding-top: 70px !important;
+  padding-bottom: 80px !important;
+}
 small{
   color: var(--darkblue);
 }
