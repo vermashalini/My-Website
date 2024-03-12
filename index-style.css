@@ -167,8 +167,8 @@ nav ul li a.active,a:hover{
   font-weight: bold;
 }
 .py-5 {
-  padding-top: 70px !important;
-  padding-bottom: 80px !important;
+  padding-top: 90px !important;
+  padding-bottom: 83px !important;
 }
 small{
   color: var(--darkblue);
