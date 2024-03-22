@@ -1,0 +1,269 @@
+/* Overall */
+
+:root{
+--darkblue:#316879;
+--orange:#f47a60;
+--brightblue:#7fe7dc;
+--dbrightblue:#0ee9d3;
+--grey:#ced7d8;
+--white:#ffffff;
+--darkgrey: #333;
+}
+.whole-page{
+background: url(../Images/Backdrop.jpg) no-repeat;
+background-size: cover;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: bold;
+}
+
+.action-bar{
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+}
+.menu-bar nav{
+background: var(--darkblue);
+height: 80px;
+width: 100%;
+}
+label.logo{
+color:var(--brightblue);
+font-size: 35px;
+line-height:80px;
+padding: 0 100px;
+font-weight:bold;
+font-family: 'Emblema One', system-ui;
+letter-spacing: -8.5px;
+}
+nav ul{
+float: right;
+margin-right: 100px;
+}
+nav ul li{
+display: inline-block;
+line-height: 80px;
+margin:0 5px;
+}
+nav ul li a{
+color:var(--brightblue);
+font-size: 17px;
+padding: 7px 13px;
+border-radius: 3px;
+text-decoration: none;
+}
+nav ul li a.active,a:hover{
+background: var(--brightblue);
+color: var(--darkblue);
+transition: .5s;
+}
+.checkbtn{
+font-size: 30px;
+float:right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+#check{
+display: none;
+}
+
+/* action bar css ends */
+
+.btn-close{
+background-color: transparent;
+border: 0;
+font-size: 20px;
+cursor: pointer;
+position: absolute;
+right: 50px;
+top: 100px;
+border-radius: 50%;
+transition: all 0.2s ease-in;
+}
+.btn-close:hover{
+opacity: 0.7;
+background-color: var(--grey);
+
+}
+
+/* cross button css close */
+
+input{
+    display: none;
+}
+.book{
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    transition-duration: 1s;
+    perspective: 3000px;
+    margin-top: 100px;
+}
+.cover{
+    /* background-color: var(--darkblue); */
+    width: 600px;
+    /* height: 100%; */
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0 0 5px rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 7;
+    transform-origin: center left;
+    transition: transform 1s;
+}
+.back-cover{
+    background-color: var(--darkblue);
+    width: 500px;
+    /* height: 100%; */
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0 0 5px rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: -1;
+}
+.cover label{
+    height: 100%;
+    cursor: pointer;
+}
+.page{
+    position: absolute;
+    background-color: var(--darkblue);
+    width: 600px;
+    height: 460px;
+    border-radius: 0 15px 15px 0;
+    margin-top: 10px;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition-duration: 1.5s;
+}
+.page .front-page img{
+    width: 560px;
+    /* height: 320px; */
+    border-radius: 0 15px 15px 0;
+    padding-left: 0;
+}
+.page .back-page img{
+    width: 560px;
+    /* height: 320px; */
+    border-radius: 15px 0 0 15px;
+    padding-left: 0;
+}
+.front-page{
+    position: absolute;
+    width: 560px;
+    height: 400px;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.back-page{
+    transform: rotateY(180deg);
+    position: absolute;
+    width: 560px;
+    height: 400px;
+    padding: 1rem;
+    backface-visibility: hidden;
+    z-index: 99;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.next, .prev{
+    position: absolute;
+    bottom: -3em;
+    cursor: pointer;
+}
+.next{
+    right: 1em;
+    color: var(--brightblue);
+}
+.prev{
+    left: -1.5em;
+    color: var(--brightblue);
+}
+#page1{
+    z-index: 6;
+}
+#page2{
+    z-index: 5;
+}
+#page3{
+    z-index: 4;
+}
+#page4{
+    z-index: 3;
+}
+#page5{
+    z-index: 2;
+}
+#page6{
+    z-index: 1;
+}
+#checkbox-cover:checked ~ .book{
+    transform: translateX(700px);
+}
+#checkbox-cover:checked ~ .book .cover{
+    transition: tramsform 1.5s, z-index 0.5s 0.5s;
+    transform: rotateY(-180deg);
+    z-index: 1;
+}
+#checkbox-cover:checked ~ .book .page{
+    box-shadow: 0 0 3px rgb(99, 98, 98);
+}
+#checkbox-page1:checked ~ .book #page1{
+    transform: rotateY(-180deg);
+    z-index: 2;
+}
+#checkbox-page2:checked ~ .book #page2{
+    transform: rotateY(-180deg);
+    z-index: 3;
+}
+#checkbox-page3:checked ~ .book #page3{
+    transform: rotateY(-180deg);
+    z-index: 4;
+}
+#checkbox-page4:checked ~ .book #page4{
+    transform: rotateY(-180deg);
+    z-index: 5;
+}
+#checkbox-page5:checked ~ .book #page5{
+    transform: rotateY(-180deg);
+    z-index: 6;
+}
+#checkbox-page6:checked ~ .book #page6{
+    transform: rotateY(-180deg);
+    z-index: 7;
+}
+
+
+
+.dis-flex{
+background-color:var(--orange);
+display:flex;
+align-items: center;
+font-weight: bold;
+}
+.dis-flex p{
+color: var(--white);
+}
+.container-box{
+background-color: var(--darkblue);
+margin-top: 50px;
+padding: 30px;
+}
+
+/* footer css end */
+
+
+

@@ -631,7 +631,7 @@ h1{
 .p2 a:link{
     text-decoration: none;
 }
-.p2 a:link:hover{
+.p2 a:hover{
     color: var(--orange);
     background-color: transparent;
 }
