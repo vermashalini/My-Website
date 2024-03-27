@@ -18,7 +18,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "kano", sans-serif;
     font-weight: bold;
 }
 nav{
@@ -580,41 +580,50 @@ h1{
     color:var(--orange);
     text-transform: uppercase;
     margin-top: 10px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 .top-left{
     width:60% auto;
     float: left;
 }
+.behance{
+    font-weight:normal;
+    font-size:20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.linkedin{
+    font-weight:normal;
+    font-size:20px;
+}
+/* .behance a{
+    color: var(--darkblue) !important;
+}
+.linkedin a{
+    color: var(--darkblue) !important;
+} */
 .behance a:link {
+    font-family: "kano", sans-serif;
     background-color: transparent;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 .behance a:hover {
+    font-family: "kano", sans-serif;
     color: var(--orange);
     background-color: transparent;
     text-decoration: underline;
 }
-/* .behance a:visited {
-    color: var(--orange);
-    background-color: transparent;
-    text-decoration: none;
-  } */
 .linkedin a:link {
+    font-family: "kano", sans-serif;
     background-color: transparent;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 .linkedin a:hover {
+    font-family: "kano", sans-serif;
     color: var(--orange);
     background-color: transparent;
     text-decoration: underline;
 }
-/* .linkedin a:visited {
-    color: var(--orange);
-    background-color: transparent;
-    text-decoration: none;
-  } */
-
 .top-right{
     width:40% auto;
     float: left;
@@ -624,14 +633,17 @@ h1{
     clear: both;
 }
 .p2{
+    font-family: "kano", sans-serif;
     color:var(--darkblue);
     text-align: left;
     margin-left: 80px auto;
 }
 .p2 a:link{
+    font-family: "kano", sans-serif;
     text-decoration: none;
 }
 .p2 a:hover{
+    font-family: "kano", sans-serif;
     color: var(--orange);
     background-color: transparent;
 }
@@ -718,17 +730,7 @@ h1{
     font-size: 13px;
     letter-spacing: none;
 }
-.behance{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight:normal;
-    font-size:20px;
-    color: var(--white);
-}
-.linkedin{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight:normal;
-    font-size:20px;
-}
+
 .dis-flex{
     background-color:var(--orange);
     display:flex;

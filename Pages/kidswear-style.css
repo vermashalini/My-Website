@@ -1,39 +1,39 @@
 /* Overall */
 
 :root{
---darkblue:#316879;
---orange:#f47a60;
---brightblue:#7fe7dc;
---dbrightblue:#0ee9d3;
---grey:#ced7d8;
---white:#ffffff;
---darkgrey: #333;
+    --darkblue:#316879;
+    --orange:#f47a60;
+    --brightblue:#7fe7dc;
+    --dbrightblue:#0ee9d3;
+    --grey:#ced7d8;
+    --white:#ffffff;
+    --darkgrey: #333;
 }
 .whole-page{
-background: url(../Images/Backdrop.jpg) no-repeat;
-background-size: cover;
-font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-weight: bold;
+    background: url(../Images/Backdrop.jpg) no-repeat;
+    background-size: cover;
+    font-family: "kano", sans-serif;
+    font-weight: bold;
 }
 
 .action-bar{
-text-decoration: none;
-list-style: none;
-box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 .menu-bar nav{
-background: var(--darkblue);
-height: 80px;
-width: 100%;
+    background: var(--darkblue);
+    height: 80px;
+    width: 100%;
 }
 label.logo{
-color:var(--brightblue);
-font-size: 35px;
-line-height:80px;
-padding: 0 100px;
-font-weight:bold;
-font-family: 'Emblema One', system-ui;
-letter-spacing: -8.5px;
+    color:var(--brightblue);
+    font-size: 35px;
+    line-height:80px;
+    padding: 0 100px;
+    font-weight:bold;
+    font-family: 'Emblema One', system-ui;
+    letter-spacing: -8.5px;
 }
 nav ul{
 float: right;
