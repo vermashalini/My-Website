@@ -176,7 +176,10 @@ small{
 .pb-2{
   color: var(--brightblue);
 }
-
+.about{
+  font-size: 20px;
+  margin-right: 50px;
+}
 .bi{
   border-radius: 40;
 }
