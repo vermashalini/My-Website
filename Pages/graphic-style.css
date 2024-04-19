@@ -90,6 +90,24 @@ nav ul li a.active,a:hover{
 }
     
     /* cross button css close */
+.graphic{
+    /* display: flex; */
+    align-items: center;
+    /* width: 95%; */
+    margin: 20px;
+}
+.card{
+    width: 600px;
+    padding: 50px;
+    margin: 20px;
+}
+.carousel-control-prev-icon{
+    background-image: url(../chevron-left-arrow-dblue.svg);
+}
+.carousel-control-next-icon{
+    background-image: url(../chevron-right-arrow-dblue.svg);
+}
+
 
 .dis-flex{
     background-color:var(--orange);
