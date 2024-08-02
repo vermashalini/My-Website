@@ -109,7 +109,7 @@ nav ul li a.active,a:hover{
     }
     .bottom{
         width:900px;
-        margin-top: 1300px ;
+        margin-top: 1300px;
     }
     .content h3{
         font-size: 28px;
@@ -682,7 +682,7 @@ h1{
 .left h4{
     margin-left: 20px;
     margin-right: 20px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: normal;
     letter-spacing: 1px;
     margin-bottom: 5px;
@@ -696,9 +696,7 @@ h1{
     top:-68px;
     left:62px;
 }
-.bottom{
-    color: var(--grey);
-}
+
 .batch{
     width: 200px;
     text-align: center;
@@ -741,7 +739,7 @@ h1{
     color: var(--white);
 }
 .bottom{
+    color: var(--grey);
     width:1100px auto;
-    margin-top: 1630px auto;
+    margin-top: 500px auto;
 }
-
