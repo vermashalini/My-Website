@@ -26,14 +26,15 @@ nav{
   height: 80px;
   width: 100%;
 }
-label.logo{
+.logo{
   color:var(--brightblue);
   font-size: 35px;
   line-height:80px;
-  padding: 0 100px;
+  margin: 0 100px;
   font-weight:bold;
   font-family: 'Emblema One', system-ui;
   letter-spacing: -8.5px;
+  text-decoration: none;
 }
 nav ul{
   float: right;
