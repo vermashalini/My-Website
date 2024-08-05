@@ -26,14 +26,17 @@ background: var(--darkblue);
 height: 80px;
 width: 100%;
 }
-label.logo{
-color:var(--brightblue);
-font-size: 35px;
-line-height:80px;
-padding: 0 100px;
-font-weight:bold;
-font-family: 'Emblema One', system-ui;
-letter-spacing: -8.5px;
+.logo{
+    font-size: 35px;
+    line-height:80px;
+    margin: 0 100px;
+    padding: 0 5px 7px 5px;
+}
+nav ul li a.active,a:hover{
+    background: var(--brightblue);
+    transition: .5s;
+    border-radius: 2px;
+    color: var(--darkblue);
 }
 nav ul{
 float: right;
@@ -51,11 +54,7 @@ padding: 7px 13px;
 border-radius: 3px;
 text-decoration: none;
 }
-nav ul li a.active,a:hover{
-background: var(--brightblue);
-color: var(--darkblue);
-transition: .5s;
-}
+
 .checkbtn{
 font-size: 30px;
 float:right;
