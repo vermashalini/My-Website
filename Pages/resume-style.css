@@ -89,7 +89,7 @@ body{
     }
     .bottom{
         width:900px;
-        margin-top: 1300px;
+        margin-top: 1450px;
     }
     .content h3{
         font-size: 28px;
@@ -101,7 +101,7 @@ body{
         margin-left: 80px;
     }
     .content ul{
-        font-size: 12px;
+        font-size: 16px;
         margin-left: 80px;
     }
     .content h4{
@@ -156,7 +156,7 @@ body{
         margin-left: 100px;
     }
     .content ul{
-        font-size: 12px;
+        font-size: 16px;
         margin-left: 100px;
     }
     .content h4{
@@ -247,7 +247,7 @@ body{
     }
     .content ul{
         width: 80%;
-        font-size: 12px;
+        font-size: 16px;
         font-weight: lighter;
         margin-left: 50px;
     }
@@ -337,7 +337,7 @@ body{
     }
     .content ul{
         width: 80%;
-        font-size: 12px;
+        font-size: 16px;
         font-weight: lighter;
         margin-left: 50px;
     }
@@ -427,7 +427,7 @@ body{
     }
     .content ul{
         width: 80%;
-        font-size: 12px;
+        font-size: 16px;
         font-weight: lighter;
         margin-left: 50px;
     }
@@ -606,12 +606,12 @@ h1{
     margin-left: 100px auto;
 }
 .content ul{
-    font-size: 13px;
+    font-size: 14px;
     margin-left: 100px;
 }
 .content h4{
     margin-left: 100px auto;
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: none;
 }
 
