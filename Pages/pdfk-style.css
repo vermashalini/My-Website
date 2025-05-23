@@ -1,13 +1,27 @@
 /* Overall */
 
 :root{
-    --darkblue:#316879;
-    --orange:#f47a60;
-    --brightblue:#7fe7dc;
-    --dbrightblue:#0ee9d3;
-    --grey:#ced7d8;
-    --white:#ffffff;
-    --darkgrey: #333;
+  --darkblue:#234B57;
+  --red:#8A210A;
+  --brightblue:#7fe7dc;
+  --dbrightblue:#0ee9d3;
+  --grey:#ced7d8;
+  --white:#F5F5F5;
+  --Beige: #F5F5DC;
+  --DarkGreen: #006400;
+  --LightGreen: #98FB98;
+  --LightGray: #F0F0F0;
+  --DBlue: #003366;
+  --LightBlue: #66B2FF;
+  --LightYellow: #FFF9C4;
+  --DarkYellow: #FFC107;
+  --creamcan: #F5C14D;
+  --lightslateblue: #9C79F7;
+  --orange:#f47a60;
+  --darkgrey: #333;
+  --bark:#531900;
+  --clay:#8c9870;
+  --gum:#d7d6cc;
 }
 .whole-page{
     background: url(../Images/Backdrop.jpg) no-repeat;
@@ -16,7 +30,8 @@
     font-weight: bold;
 }
 .navbar{
-  background: var(--darkblue) !important;
+  background: var(--white) !important;
+  border-bottom: solid 1px var(--red);
   z-index: 2;
 }
 .navbar-brand{
@@ -25,7 +40,7 @@
   padding: 0 5px 7px 5px;
 }
 .navbar-brand.active, .navbar-brand:hover{
-  background: var(--brightblue);
+  background: var(--darkblue);
   transition: .5s;
   border-radius: 2px;
 }
@@ -38,7 +53,7 @@
   box-shadow: none;
 }
 .navbar-toggler.active, .navbar-toggler:hover, .navbar-toggler:focus{
-  border: 1px solid var(--brightblue);
+  border: 1px solid var(--darkblue);
   box-shadow: none;
 }
 .navbar-collapse{
@@ -51,14 +66,14 @@
 }
 .nav-link{
   margin:0 10px;
-  color: var(--brightblue) !important;
+  color: var(--darkblue) !important;
   font-size: 17px;
   border-radius: 3px;
   text-decoration: none;
 }
 .nav-link.active, .nav-link:hover{
-  background: var(--brightblue);
-  color: var(--darkblue) !important;
+  background: var(--darkblue);
+  color: var(--white) !important;
   transition: .5s;
   border-radius: 3px;
 }
@@ -108,7 +123,7 @@
     
     
 .dis-flex{
-    background-color:var(--orange);
+    background-color:var(--red);
     display:flex;
     align-items: center;
     font-weight: bold;

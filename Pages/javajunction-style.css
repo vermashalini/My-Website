@@ -1,16 +1,26 @@
 /* Overall */
 
 :root{
-  --darkblue:#316879;
-  --orange:#f47a60;
+  --darkblue:#234B57;
+  --red:#8A210A;
   --brightblue:#7fe7dc;
   --dbrightblue:#0ee9d3;
   --grey:#ced7d8;
-  --white:#ffffff;
-  --darkgrey: #333;
+  --white:#F5F5F5;
+  --Beige: #F5F5DC;
+  --DarkGreen: #006400;
+  --LightGreen: #98FB98;
+  --LightGray: #F0F0F0;
+  --DBlue: #003366;
+  --LightBlue: #66B2FF;
+  --LightYellow: #FFF9C4;
+  --DarkYellow: #FFC107;
+  --creamcan: #F5C14D;
+  --lightslateblue: #9C79F7;
 }
 .whole-page{
-  background: url(../Images/Backdrop.jpg) no-repeat;
+  background-image: url(../Backdrop.jpg);
+  /* background-color: var(--darkblue); */
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -18,7 +28,8 @@
   font-weight: bold;
 }
 .navbar{
-  background: var(--darkblue) !important;
+  background: var(--white) !important;
+  border-bottom: solid 1px var(--red);
   z-index: 2;
 }
 .navbar-brand{
@@ -27,7 +38,7 @@
   padding: 0 5px 7px 5px;
 }
 .navbar-brand.active, .navbar-brand:hover{
-  background: var(--brightblue);
+  background: var(--white);
   transition: .5s;
   border-radius: 2px;
 }
@@ -40,7 +51,7 @@
   box-shadow: none;
 }
 .navbar-toggler.active, .navbar-toggler:hover, .navbar-toggler:focus{
-  border: 1px solid var(--brightblue);
+  border: 1px solid var(--darkblue);
   box-shadow: none;
 }
 .navbar-collapse{
@@ -53,14 +64,14 @@
 }
 .nav-link{
   margin:0 10px;
-  color: var(--brightblue) !important;
+  color: var(--darkblue) !important;
   font-size: 17px;
   border-radius: 3px;
   text-decoration: none;
 }
 .nav-link.active, .nav-link:hover{
-  background: var(--brightblue);
-  color: var(--darkblue) !important;
+  background: var(--darkblue);
+  color: var(--white) !important;
   transition: .5s;
   border-radius: 3px;
 }
@@ -94,6 +105,7 @@
   background-color: var(--darkblue);
   color: var(--white);
   width: 90%;
+  max-width: auto;
   border-radius: 10px;
   margin: 50px;
   padding: 30px;
@@ -110,6 +122,7 @@
   background-color: transparent;
   color: var(--darkblue);
   width: 90%;
+  max-width: auto;
   border: 2px solid var(--darkblue);
   border-radius: 10px;
   margin: 50px;
@@ -130,15 +143,22 @@
 
 .container{
   width: 90%;
-  margin: 50px;
-  padding-left: 30px;
-  padding-right: 0;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 100px;
+}
+.row{
+  padding-left: 10px;
+  font-size: 18px;
 }
 .container .pb-2{
-  color: var(--darkblue);
+  color: var(--red);
   font-size: 30px;
   font-weight: bold;
-  border-bottom: 2px solid var(--darkblue);
+  border-bottom: 2px solid var(--red);
+}
+.py-5 {
+  padding-top: 2rem !important;
 }
 .container .bi{
   height: 50px;
@@ -163,7 +183,7 @@
   color: var(--darkblue);
 }
 .topic{
-  color: var(--darkblue);
+  color: var(--red);
   font-size: 20px;
   font-weight: bold;
 }
@@ -171,18 +191,19 @@
 /* overview css close */
 
 .research{
-  color: var(--darkblue);
-  border-bottom: 2px solid var(--darkblue);
+  color: var(--red);
+  border-bottom: 2px solid var(--red);
   font-size: 30px;
   font-weight: bold;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .r1{
   color: var(--darkblue);
   font-size: 25px;
   font-weight: bold;
-  padding-top: 50px;
+  padding-top: 20px;
 }
+
 .row1 .feature{
   border: 2px solid var(--darkblue);
   margin: 15px;
@@ -209,12 +230,13 @@
 .pain{
   font-size: 25px;
   color: var(--darkblue);
+  padding-top: 50px;
 }
 .a{
   display: flex;
 }
 .persona{
-  width: 90%;
+  width: 100%;
   display: block;
   align-items:flex-start;
   justify-content: center;
@@ -233,7 +255,7 @@
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 20px;
-  color: var(--darkblue);
+  color: var(--red);
   text-decoration: underline;
 }
 .container-1 .content1, .container-2 .content2{
@@ -249,14 +271,14 @@
   line-height: 60px;
   padding-bottom: 25px;
   padding-left: 25px;
-  color: var(--darkgrey);
+  color: var(--darkblue);
   cursor: pointer;
   z-index: 12;
   transition: all 0.4s ease;
 }
 .list1 label:hover, .list label:hover{
   background: var(--darkblue);
-  color: var(--brightblue);
+  color: var(--white);
 }
 .container-1 .content1 .list, .container-2 .content2 .list1{
   display: flex;
@@ -267,7 +289,9 @@
 }
 #about:checked ~ .list .about, #problem:checked ~ .list .problem, #journey:checked ~ .list .journey,
 #about1:checked ~ .list1 .about1, #problem1:checked ~ .list1 .problem1, #journey1:checked ~ .list1 .journey1{
-  color: var(--brightblue);
+  color: var(--white);
+  background: var(--darkblue);
+  border-radius: 22px;
 }
 .content1 .indicator, .content2 .indicator1{
   position: absolute;
@@ -275,7 +299,8 @@
   width: 100%;
   top: 0;
   left: -300;
-  background: var(--darkblue);
+  /* background: var(--darkblue); */
+  border: 2px solid var(--darkblue);
   border-radius: 22px;
   transition: all 0.4s ease;
 }
@@ -384,11 +409,10 @@ td{
   margin: 100px;
 }
 .design, .redesign{
-  max-width: 1240px;
-  width: 100%;
-  margin: 130px auto;
-  margin-bottom: 80px;
-  padding: 25px 30px 30px 30px;
+  width: 84%;
+  margin-left: 80px;
+  margin-top: 100px;
+  padding: 40px 0px 40px 40px;
   border-radius: 12px;
   background: var(--white);
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
@@ -397,6 +421,7 @@ td{
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 20px;
+  color: var(--red);
 }
 .design nav, .redesign nav{
   position: relative;
@@ -412,10 +437,10 @@ td{
   text-align: center;
   line-height: 50px;
   cursor: pointer;
-  color: var(--darkgrey);
-  border: 2px solid var(--brightblue);
+  color: var(--darkblue);
+  border: 2px solid var(--darkblue);
   border-radius: 20px;
-  font-size: 17px;
+  font-size: 18px;
   margin-right: 20px;
   position: relative;
   z-index: 1;
@@ -427,7 +452,8 @@ td{
 #mockups:checked ~ nav label.mockups,
 #key:checked ~ nav label.key,
 #hi-fi:checked ~ nav label.hi-fi{
-  color: var(--darkblue);
+  color: var(--white);
+  background: var(--darkblue);
 }
 input[type="radio"]{
   display: none;
@@ -435,9 +461,8 @@ input[type="radio"]{
 .design nav .slider, .redesign nav .slider{
   position: absolute;
   height: 100%;
-  width: 294px;
   margin-right: 20px;
-  background: var(--brightblue);
+  background: var(--darkblue);
   border-radius: 20px;
   z-index: 0;
   left: 0;
@@ -474,11 +499,16 @@ section .content-2 .title p, section .content-3 .title p{
 section .content-2 .images p, section .content-3 .images p{
   font-size: 12px;
 }
-
-
+.findings .container p{
+  padding-top: 10px;
+}
+.special{
+  margin-left: 30px;
+  width: 1390px;
+}
 
 .dis-flex{
-  background-color:var(--orange);
+  background-color:var(--red);
   display:flex;
   align-items: center;
   font-weight: bold;
